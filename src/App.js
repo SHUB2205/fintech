@@ -1,4 +1,5 @@
 import './App.css';
+import Form from './components/form'
 
 function App() {
   return (
@@ -31,6 +32,10 @@ function App() {
             </div>
           </div>
         </nav>
+        <br></br>
+        <Form/>
+
+
         
       </header>
     </div>

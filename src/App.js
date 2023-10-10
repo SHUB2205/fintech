@@ -6,6 +6,7 @@ function App() {
       <header className="App-header">
         <h1>Personal Finance Management Software</h1>
         <h2>Don't spend your hard earned money without keeping a record.</h2>
+  
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Fintech</a>

@@ -37,3 +37,50 @@
   }
 }
 
+
+/* Style the navbar background */
+.navbar {
+  background-color: #14191e; /* Change this to your desired background color */
+  color: #fff; /* Text color */
+}
+
+/* Style the navbar links */
+.navbar-nav .nav-link {
+  color: #fff; /* Link text color */
+}
+
+/* Change link color on hover */
+.navbar-nav .nav-link:hover {
+  color: #ff8c00; /* Hovered link text color */
+}
+
+/* Style the active link */
+.navbar-nav .nav-link.active {
+  font-weight: bold; /* Add bold font for the active link */
+}
+
+/* Style the disabled link */
+.navbar-nav .nav-link.disabled {
+  color: #ccc; /* Disabled link text color */
+}
+
+/* Style the brand/logo */
+.navbar-brand {
+  color: #fff; /* Brand text color */
+  font-weight: bold; /* Add bold font for the brand */
+}
+
+/* Style the navbar-toggler icon */
+.navbar-toggler-icon {
+  background-color: #fff; /* Toggler icon color */
+}
+
+/* Override Bootstrap styles for horizontal navbar */
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-nav .nav-link {
+  margin: 5px; /* Add spacing between nav items */
+}

@@ -5,6 +5,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Fuck me</h1>
+        <h2>HARDER!!!!!!!!!!</h2>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

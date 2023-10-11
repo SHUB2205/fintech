@@ -1,86 +1,85 @@
-.App {
-  text-align: left;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #ffffff;
-  min-height: 100vh;
+body{
   display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  font-size: calc(10px + 2vmin);
-  color: rgb(3, 0, 0);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(160, 232, 160);
+  background-size: cover;
+  background-position: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-/* Style the navbar background */
-.navbar {
-  background-color: #14191e; /* Change this to your desired background color */
-  color: #fff; /* Text color */
-}
-
-/* Style the navbar links */
-.navbar-nav .nav-link {
-  color: #fff; /* Link text color */
-}
-
-/* Change link color on hover */
-.navbar-nav .nav-link:hover {
-  color: #ff8c00; /* Hovered link text color */
-}
-
-/* Style the active link */
-.navbar-nav .nav-link.active {
-  font-weight: bold; /* Add bold font for the active link */
-}
-
-/* Style the disabled link */
-.navbar-nav .nav-link.disabled {
-  color: #ccc; /* Disabled link text color */
-}
-
-/* Style the brand/logo */
-.navbar-brand {
-  color: #fff; /* Brand text color */
-  font-weight: bold; /* Add bold font for the brand */
-}
-
-/* Style the navbar-toggler icon */
-.navbar-toggler-icon {
-  background-color: #fff; /* Toggler icon color */
-}
-
-/* Override Bootstrap styles for horizontal navbar */
-.navbar-nav {
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: gray;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+
 }
 
-.navbar-nav .nav-link {
-  margin: 5px; /* Add spacing between nav items */
+.Tit{
+  font-size: 1.5em;
+  color: aliceblue;
+  user-select: none;
 }
+
+
+.navigation .btnLogin-popup{
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid black;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color:aliceblue;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: .5s;
+
+}
+
+.navigation .btnLogin-popup:hover{
+  background: white;
+  color: black;
+
+}
+
+.navigation a{
+  position:relative;
+  font-size: 1.1em;
+  color: aliceblue;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation a::after{
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width:100%;
+  height: 3px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+
+.navigation a:hover:after{
+  transform: scaleX(1);
+}
+

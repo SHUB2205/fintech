@@ -1,26 +1,36 @@
 import React from 'react';
+import './comp.css';
 
 function Form(){
     return(
         <div>
-            <header>
-                <form>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <body>
+                <div class='wrapper'>
+                    <div class='form-box login'>
+                        <h2>Login</h2>
+                        <form action='#'>
+                            <div class='input-box'>
+                                <span class="icon"></span>
+                                <input type="email" required/>
+                                <label>Email</label>
+                            </div>
+                            <div class='input-box'>
+                                <span class="icon"></span>
+                                <input type="password" required/>
+                                <label>Password</label>
+                            </div>
+                            <div class='remember'>
+                                <label><input type='checkbox'/>Remember me</label>
+                                <a href='#'>Forgot Password</a>
+                            </div>
+                            <button type='submit' class='btn'>Login</button>
+                            <div class='login-register'>
+                                <p>Don't have an account<a href='#' class='rgister-link'>Register</a></p>
+                            </div>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1"/>
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </header>
+                </div>
+            </body>
         </div>
     )
 }

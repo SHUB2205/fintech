@@ -66,12 +66,15 @@ function Form(){
 const wrapper= document.querySelector('.wrapper');
 const loginlink=document.querySelector('.Login-link');
 const registerlink=document.querySelector('.register-link');
-registerlink.addEventListener('click',()=>{
-    wrapper.classList.add('active');
-});
 
-loginlink.addEventListener('click',()=>{
-    wrapper.classList.remove('active');
-});
+if(wrapper){
+    registerlink.addEventListener('click',()=>{
+        wrapper.classList.add('active');
+    });
+
+    loginlink.addEventListener('click',()=>{
+        wrapper.classList.remove('active');
+    });
+}
 
 export default Form;

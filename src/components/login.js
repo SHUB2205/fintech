@@ -1,4 +1,5 @@
 import Form from './form.js';
+import {Link} from 'react-router-dom';
 
 function Login() {
   return (
@@ -8,10 +9,10 @@ function Login() {
             <h2 class="Tit">Personal Finance Management Software</h2>
             <br></br>
             <nav class="navigation">
-                <a href="./App.js">Home</a>
-                <a href="#">Dashboard</a>
-                <a href="#">Service</a>
-                <button class="btnLogin-popup">Login</button>
+                <Link to="/" class="btnLogin-popup">Home</Link>
+                <Link to="/dashboard" class="btnLogin-popup">Dashboard</Link>
+                <Link to="/service" class="btnLogin-popup">Service</Link>
+                <Link to="/login" class="btnLogin-popup">Login</Link>
             </nav>
           </div>
 

@@ -10,9 +10,9 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: rgb(160, 232, 160);
   background-size: cover;
   background-position: center;
+  background-image: url("https://www.abercrombiekent.co.uk/-/media/abercrombieandkent/images/itineraries/destinations/north-america/usa/city-lights-of-the-usa/day-11--miami.jpg?w=1920&h=940");
 }
 
 header{
@@ -21,7 +21,7 @@ header{
   left: 0;
   width: 100%;
   padding: 20px 100px;
-  background: gray;
+  background: #28282B;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,7 +40,6 @@ header{
   width: 130px;
   height: 50px;
   background: transparent;
-  border: 2px solid black;
   outline: none;
   border-radius: 6px;
   cursor: pointer;
@@ -49,7 +48,6 @@ header{
   font-weight: 500;
   margin-left: 40px;
   transition: .5s;
-
 }
 
 .navigation .btnLogin-popup:hover{

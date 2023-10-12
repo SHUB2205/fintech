@@ -1,8 +1,6 @@
-import './App.css';
-import Login from './components/login.js';
+import Form from './form.js';
 
-
-function App() {
+function Login() {
   return (
     <div className="App">
         <header>
@@ -10,7 +8,7 @@ function App() {
             <h2 class="Tit">Personal Finance Management Software</h2>
             <br></br>
             <nav class="navigation">
-                <a href="#">Home</a>
+                <a href="./App.js">Home</a>
                 <a href="#">Dashboard</a>
                 <a href="#">Service</a>
                 <button class="btnLogin-popup">Login</button>
@@ -18,9 +16,9 @@ function App() {
           </div>
 
         </header>
-        <Login/>
+        <Form/>
     </div>
   );
 }
 
-export default App;
+export default Login;
